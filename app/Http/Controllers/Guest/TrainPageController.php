@@ -11,6 +11,6 @@ class TrainPageController extends Controller
     public function index()
     {
         $trains = Train::all();
-        return view('pages.guest.trains.index', compact($trains));
+        return view('pages.guest.trains.index', compact('trains'));
     }
 }
